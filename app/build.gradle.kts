@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -58,6 +59,7 @@ dependencies {
     implementation(libs.activity.compose)
     implementation(libs.core.splashscreen)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.messaging.ktx)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
@@ -66,7 +68,16 @@ dependencies {
     // Dependencias directas adicionales
     implementation("com.google.android.gms:play-services-wearable:17.1.0")
     implementation("androidx.wear:wear:1.2.0")
-    implementation("androidx.core:core-ktx:1.10.1") // Comilla de cierre añadida
+    implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation ("androidx.wear:wear:1.2.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-database") // Dependencia para Realtime Database
+    implementation("com.google.firebase:firebase-database-ktx") // Dependencia para Realtime Database KTX (opcional)
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
 }
+
+

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "735098903868",
+    "project_id": "tdapp-40933",
+    "storage_bucket": "tdapp-40933.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735098903868:android:b42de512d7f5215e9d9239",
+        "android_client_info": {
+          "package_name": "com.example.tdapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEf31ik0-i0SD_3dzX82vI_lUCQP5ljlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735098903868:android:8be922659adb21cb9d9239",
+        "android_client_info": {
+          "package_name": "com.example.tdapp_wearable"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEf31ik0-i0SD_3dzX82vI_lUCQP5ljlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
